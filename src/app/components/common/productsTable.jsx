@@ -31,12 +31,12 @@ const ProductsTable = ({ products }) => {
                   backgroundImage: `url(${el.image})`
                 }}
               ></div>
-              <div className='row justify-content-between'>
-                <div className='col-3'>{el.name}</div>
+              <div className='row justify-content-between p-2'>
+                <div className='col-3'>{el.rating}</div>
                 <div className='col-3'>{el.price}</div>
               </div>
               <div className='row'>
-                <h5>{el.description}</h5>
+                <div className='col-12 text-truncate'>{el.description}</div>
               </div>
               <div className='row'>
                 <button className='btn btn-primary col-12'>add to cart</button>

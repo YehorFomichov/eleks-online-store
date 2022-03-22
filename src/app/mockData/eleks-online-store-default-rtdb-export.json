@@ -1,129 +1,113 @@
 {
   "brand": {
-    "67rdca3eeb7f6fgeed471814": {
+    "hp": {
       "_id": "67rdca3eeb7f6fgeed471814",
-      "name": "hp"
+      "name": "HP"
     },
-    "67rdca3eeb7f6fgeed471818": {
+    "acer": {
       "_id": "67rdca3eeb7f6fgeed471818",
-      "name": "asus"
+      "name": "ACER"
     },
-    "67rdca3eeb7f6fgeed471820": {
+    "asus": {
       "_id": "67rdca3eeb7f6fgeed471820",
-      "name": "lenovo"
+      "name": "ASUS"
     },
-    "67rdca3eeb7f6fgeed471822": {
+    "apple": {
       "_id": "67rdca3eeb7f6fgeed471822",
-      "name": "dell"
-    },
-    "67rdca3eeb7f6fgeed471824": {
-      "_id": "67rdca3eeb7f6fgeed471824",
-      "name": "apple"
-    },
-    "67rdca3eeb7f6fgeed471829": {
-      "_id": "67rdca3eeb7f6fgeed471829",
-      "name": "razer"
+      "name": "APPLE"
     }
   },
   "category": {
-    "67rdca3eeb7f6fgeed471100": {
+    "notebook": {
       "_id": "67rdca3eeb7f6fgeed471100",
-      "name": "laptop"
+      "name": "LAPTOP"
     },
-    "67rdca3eeb7f6fgeed471101": {
+    "monitor": {
       "_id": "67rdca3eeb7f6fgeed471101",
-      "name": "phone"
+      "name": "MONITOR"
     },
-    "67rdca3eeb7f6fgeed4711012": {
+    "mouse": {
       "_id": "67rdca3eeb7f6fgeed4711012",
-      "name": "monitor"
-    },
-    "67rdca3eeb7f6fgeed471102": {
-      "_id": "67rdca3eeb7f6fgeed471102",
-      "name": "pc"
-    },
-    "67rdca3eeb7f6fgeed471103": {
-      "_id": "67rdca3eeb7f6fgeed471103",
-      "name": "notepad"
+      "name": "MOUSE"
     }
   },
   "products": {
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj1": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj1",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "hp",
+      "category": ["notebook"],
+      "description": "Ноутбук HP Pavilion Gaming 15-ec2013ua (4A7M9EA) Shadow Black",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/247214370.jpg",
+      "price": 28999,
+      "rating": 4.0
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj2": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj2",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "hp",
+      "category": ["notebook"],
+      "description": "Ноутбук HP Pavilion 15-eh1106ua(4A7N2EA) Silver",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/207625738.jpg",
+      "price": 23999,
+      "rating": 4.1
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj3": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj3",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "hp",
+      "category": ["notebook"],
+      "description": "Ноутбук HP 255 G8 (45M97ES) Dark Ash Silver",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/243380144.jpg",
+      "price": 18999,
+      "rating": 4.0
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj4": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj4",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "asus",
+      "category": ["notebook", "mouse"],
+      "description": "Ноутбук ASUS TUF Gaming F15 FX506LH-HN153 (90NR03U1-M08940) Fortress Gray + мышь Asus TUF M5",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/238662391.jpg",
+      "price": 34071,
+      "rating": 4.8
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj5": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj5",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "asus",
+      "category": ["notebook"],
+      "description": "Ноутбук ASUS VivoBook 17 K712EQ-BX057 (90NB0U93-M000A0) Transparent Silver",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/247573792.jpg",
+      "price": 21944,
+      "rating": 4.0
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj6": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj6",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
+      "brand": "asus",
+      "category": ["notebook"],
+      "description": "Ноутбук ASUS ExpertBook L1 L1500CDA-BQ0758 15.6 IPS (90NX0401-M001F0) Black / AMD Ryzen 3 3250U / RAM 8 ГБ / SSD 256 ГБ",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/234893077.jpg",
+      "price": 18479,
       "rating": 4.6
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj7": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj7",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "acer",
+      "category": ["notebook"],
+      "description": "Ноутбук Acer Swift 1 SF114-34-C4RG (NX.A77EU.00C) Pure Silver",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/231887316.jpg",
+      "price": 14205,
+      "rating": 5
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj8": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj8",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "brand": "acer",
+      "category": ["notebook"],
+      "description": "Ноутбук Acer Aspire 7 A715-42G-R0VS (NH.QBFEU.00A) Charcoal Black",
       "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "price": 30029,
+      "rating": 4.2
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj9": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj9",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
+      "brand": "acer",
+      "category": ["notebook"],
       "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
       "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
       "price": 15999,
@@ -131,75 +115,102 @@
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj10": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj10",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
+      "brand": "apple",
+      "category": ["notebook"],
+      "description": "Ноутбук Apple MacBook Air 13 M1 256GB 2020 (MGN63) Space Gray",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/144249716.jpg",
+      "price": 37499,
       "rating": 4.6
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj11": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj11",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "apple",
+      "category": ["notebook"],
+      "description": "Ноутбук Apple MacBook Pro 13 M1 256GB 2020 (Z11B000Q8) Custom Space Gray",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/175329107.jpg",
+      "price": 61999,
+      "rating": 4.7
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj12": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj12",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
+      "brand": "apple",
+      "category": ["notebook"],
+      "description": "Ноутбук Apple MacBook Pro 16 M1 Max 1TB 2021 (MK1A3UA/A) Space Gray",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/229715713.jpg",
+      "price": 122999,
       "rating": 4.6
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj13": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj13",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "asus",
+      "category": ["monitor"],
+      "description": "Монитор 23.8' Asus VZ24EHE (90LM07C3-B01470)",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/252676616.jpg",
+      "price": 5499,
+      "rating": 3
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj14": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj14",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "asus",
+      "category": ["monitor"],
+      "description": "Монитор 24.5' Asus TUF Gaming VG259QM (90LM0530-B02370)",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/32822230.jpg",
+      "price": 12999,
+      "rating": 5
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj15": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj15",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "hp",
+      "category": ["monitor"],
+      "description": "Монитор 31.5' HP 32s (2UD96AA)",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/97626267.jpg",
+      "price": 8999,
+      "rating": 4.2
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj16": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj16",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "hp",
+      "category": ["monitor"],
+      "description": "Монитор 23.8' HP M24fd (474U1AA) 75Hz / USB Type-C 65W / 99% sRGB",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/244427211.jpg",
+      "price": 6999,
+      "rating": 5
     },
     "S8GtvNEFHdWYl3lrV2DXUhVXKaj17": {
       "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj17",
-      "brand": ["67rdca3eeb7f6fgeed471814"],
-      "category": ["67rdca3eeb7f6fgeed471100"],
-      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
-      "price": 15999,
-      "rating": 4.6
+      "brand": "asus",
+      "category": ["mouse"],
+      "description": "Мышь Asus ROG Gladius III Wireless/Bluetooth/USB Black (90MP0200-BMUA00)",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/192653028.jpg",
+      "price": 4559,
+      "rating": 3.5
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj18": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj18",
+      "brand": "asus",
+      "category": ["mouse"],
+      "description": "Мышь ASUS ROG Gladius II Origin USB Black (90MP00U1-B0UA00)",
+      "image": "https://content.rozetka.com.ua/goods/images/big/12231265.jpg",
+      "price": 2159,
+      "rating": 4
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj19": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj19",
+      "brand": "apple",
+      "category": ["mouse"],
+      "description": "Мышь Apple Magic Mouse Bluetooth White (MK2E3ZM/A)",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/204519286.jpg",
+      "price": 3199,
+      "rating": 4.7
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj20": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj20",
+      "brand": "apple",
+      "category": ["mouse"],
+      "description": "Мышь Wireless Apple A1657 Magic Mouse 2 White (MLA02Z/A)",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/128246999.jpg",
+      "price": 3421,
+      "rating": 4
     }
   }
 }
