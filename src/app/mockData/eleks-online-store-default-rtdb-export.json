@@ -1,0 +1,205 @@
+{
+  "brand": {
+    "67rdca3eeb7f6fgeed471814": {
+      "_id": "67rdca3eeb7f6fgeed471814",
+      "name": "hp"
+    },
+    "67rdca3eeb7f6fgeed471818": {
+      "_id": "67rdca3eeb7f6fgeed471818",
+      "name": "asus"
+    },
+    "67rdca3eeb7f6fgeed471820": {
+      "_id": "67rdca3eeb7f6fgeed471820",
+      "name": "lenovo"
+    },
+    "67rdca3eeb7f6fgeed471822": {
+      "_id": "67rdca3eeb7f6fgeed471822",
+      "name": "dell"
+    },
+    "67rdca3eeb7f6fgeed471824": {
+      "_id": "67rdca3eeb7f6fgeed471824",
+      "name": "apple"
+    },
+    "67rdca3eeb7f6fgeed471829": {
+      "_id": "67rdca3eeb7f6fgeed471829",
+      "name": "razer"
+    }
+  },
+  "category": {
+    "67rdca3eeb7f6fgeed471100": {
+      "_id": "67rdca3eeb7f6fgeed471100",
+      "name": "laptop"
+    },
+    "67rdca3eeb7f6fgeed471101": {
+      "_id": "67rdca3eeb7f6fgeed471101",
+      "name": "phone"
+    },
+    "67rdca3eeb7f6fgeed4711012": {
+      "_id": "67rdca3eeb7f6fgeed4711012",
+      "name": "monitor"
+    },
+    "67rdca3eeb7f6fgeed471102": {
+      "_id": "67rdca3eeb7f6fgeed471102",
+      "name": "pc"
+    },
+    "67rdca3eeb7f6fgeed471103": {
+      "_id": "67rdca3eeb7f6fgeed471103",
+      "name": "notepad"
+    }
+  },
+  "products": {
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj1": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj1",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj2": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj2",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj3": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj3",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj4": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj4",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj5": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj5",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj6": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj6",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj7": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj7",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj8": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj8",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj9": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj9",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj10": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj10",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj11": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj11",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj12": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj12",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj13": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj13",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj14": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj14",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj15": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj15",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj16": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj16",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    },
+    "S8GtvNEFHdWYl3lrV2DXUhVXKaj17": {
+      "_id": "S8GtvNEFHdWYl3lrV2DXUhVXKaj17",
+      "brand": ["67rdca3eeb7f6fgeed471814"],
+      "category": ["67rdca3eeb7f6fgeed471100"],
+      "description": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+      "price": 15999,
+      "rating": 4.6
+    }
+  }
+}

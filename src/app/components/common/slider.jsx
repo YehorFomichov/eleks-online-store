@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './slider.css'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-const Slider = ({ min = 0, max = 100, onChange }) => {
+const Slider = ({ min, max, onChange }) => {
   const [minVal, setMinVal] = useState(min)
   const [maxVal, setMaxVal] = useState(max)
   const minValRef = useRef(null)
