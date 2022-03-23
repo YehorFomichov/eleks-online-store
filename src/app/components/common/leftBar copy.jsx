@@ -1,13 +1,7 @@
 import React from 'react'
-import Slider from '../common/slider'
-import CheckBox from './checkBox'
 
-const LeftBar = ({
-  handleSortByCategory,
-  handleSortByBrand,
-  categoryArray,
-  brandsArray
-}) => {
+import Slider from '../common/slider'
+const LeftBar = () => {
   return (
     <div className='col-3'>
       <div className='row'>
@@ -23,15 +17,11 @@ const LeftBar = ({
       <div className='row'>
         <h3>Category</h3>
       </div>
-      <div>
-        <CheckBox onSort={handleSortByCategory} itemsList={categoryArray} />
-      </div>
+      <div>CheckBox</div>
       <div className='row'>
         <h3>Brand</h3>
       </div>
-      <div>
-        <CheckBox onSort={handleSortByBrand} itemsList={brandsArray} />
-      </div>
+      <div>Checkbox</div>
       <div className='row'>
         <h3>Rating</h3>
         <div className='row py-5'>
