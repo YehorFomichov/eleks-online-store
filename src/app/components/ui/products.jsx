@@ -8,10 +8,44 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedBrand, setSelectedBrand] = useState([])
   const [selectedCategory, setSelectedCategory] = useState([])
+  const [minPrice, setMinPrice] = useState(0)
+  const [maxPrice, setMaxPrice] = useState(65000)
+  const [minRate, setMinRate] = useState(0)
+  const [maxRate, setMaxRate] = useState(5)
+  const handleChangePrice = (event) => {
+    if (event.target.name === 'min') {
+      const value = Math.min(+event.target.value, maxPrice - 1)
+      setMinPrice(value)
+    }
+    if (event.target.name === 'max') {
+      const value = Math.max(+event.target.value, minPrice + 1)
+      setMaxPrice(value)
+    }
+  }
+  const handleChangeRate = (event) => {
+    if (event.target.name === 'min') {
+      const value = Math.min(+event.target.value, maxRate - 1)
+      setMinRate(value)
+    }
+    if (event.target.name === 'max') {
+      const value = Math.max(+event.target.value, minRate + 1)
+      setMaxRate(value)
+    }
+  }
   const { products } = useProducts()
-  const productsArray = Object.keys(products).map((el) => {
-    return { ...products[el] }
-  })
+  const productsArray = Object.keys(products)
+    .map((el) => {
+      return { ...products[el] }
+    })
+    .filter((el) => {
+      if (
+        el.price > minPrice &&
+        el.price < maxPrice &&
+        el.rating > minRate &&
+        el.rating < maxRate
+      )
+        return el
+    })
   const { categories, brands } = useProducts()
   const categoryArray = Object.keys(categories).map((el) => {
     return categories[el]
@@ -69,6 +103,12 @@ const Products = () => {
           handleSortByBrand={handleSortByBrand}
           categoryArray={categoryArray}
           brandsArray={brandsArray}
+          minPrice={minPrice}
+          maxPrice={maxPrice}
+          minRate={minRate}
+          maxRate={maxRate}
+          onChangePrice={handleChangePrice}
+          onChangeRate={handleChangeRate}
         />
         <ProductsTable products={productsCrop} />
         <Pagination

@@ -1,19 +1,21 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import './slider.css'
-import PropTypes from 'prop-types'
-import classNames from 'classnames'
-const Slider = ({ min, max, onChange }) => {
-  const [minVal, setMinVal] = useState(min)
-  const [maxVal, setMaxVal] = useState(max)
+const Slider = ({ min = 0, max, minVal, maxVal, onChange }) => {
   const minValRef = useRef(null)
   const maxValRef = useRef(null)
   const range = useRef(null)
+  const getConditionalClass = () => {
+    return minVal > max - min
+      ? 'thumb thumb--zindex-3'
+      : 'thumb thumb--zindex-5'
+  }
   const getPercent = useCallback(
     (value) => {
-      Math.round(((value - min) / (max - min)) * 100)
+      return Math.round(((value - min) / (max - min)) * 100)
     },
     [min, max]
   )
+
   useEffect(() => {
     if (maxValRef.current) {
       const minPercent = getPercent(minVal)
@@ -25,9 +27,7 @@ const Slider = ({ min, max, onChange }) => {
       }
     }
   }, [minVal, getPercent])
-  useEffect(() => {
-    onChange({ min: minVal, max: maxVal })
-  }, [minVal, maxVal, onChange])
+
   useEffect(() => {
     if (minValRef.current) {
       const minPercent = getPercent(+minValRef.current.value)
@@ -38,48 +38,41 @@ const Slider = ({ min, max, onChange }) => {
       }
     }
   }, [maxVal, getPercent])
+
   return (
-    <div className='d-flex'>
+    <div className='col-12 position-relative'>
       <input
         type='range'
+        name='min'
         min={min}
         max={max}
+        step={max > 10 ? 1 : 0.01}
         value={minVal}
         ref={minValRef}
-        className={classNames('thumb thumb--zindex-3', {
-          'thumb--zindex-5': minVal > max - 100
-        })}
-        onChange={(event) => {
-          const value = Math.min(+event.target.value, maxVal - 1)
-          setMinVal(value)
-          event.target.value = value.toString()
-        }}
+        onChange={onChange}
+        className={getConditionalClass()}
       />
       <input
         type='range'
         min={min}
-        max={max}
+        name='max'
         value={maxVal}
+        step={max > 10 ? 1 : 0.01}
         ref={maxValRef}
-        onChange={(event) => {
-          const value = Math.max(+event.target.value, minVal + 1)
-          setMaxVal(value)
-          event.target.value = value.toString()
-        }}
+        max={max}
+        onChange={onChange}
         className='thumb thumb--zindex-4'
       />
       <div className='slider'>
         <div className='slider__track' />
         <div ref={range} className='slider__range' />
-        <div className='slider__left-value'>{minVal}</div>
-        <div className='slider__right-value'>{maxVal}</div>
+      </div>
+      <div className='d-flex justify-content-between mt-3'>
+        <div className=''>{max > 10 ? `${minVal} UAH` : minVal}</div>
+        <div className=''>{max > 10 ? `${maxVal} UAH` : maxVal}</div>
       </div>
     </div>
   )
 }
-Slider.propTypes = {
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired
-}
+
 export default Slider
