@@ -1,6 +1,6 @@
 import React from 'react'
-import Slider from '../common/slider'
-import CheckBox from './checkBox'
+import Slider from '../../common/slider/slider'
+import CheckBox from '../../common/checkBox'
 import './leftBar.css'
 const LeftBar = ({
   handleSortByCategory,
@@ -15,7 +15,6 @@ const LeftBar = ({
   maxRate,
   onReset
 }) => {
-  // const [restCheckBox,setResetCheckBox] = useState(false)
   return (
     <div className='col-3'>
       <div className='panel-container position-relative'>
@@ -58,7 +57,7 @@ const LeftBar = ({
         <button
           className='btn btn-primary btn-large p-2'
           style={{ color: 'white', marginLeft: '3%', maxWidth: '94%' }}
-          onClick={() => onReset()}
+          onClick={onReset}
         >
           Clear all filters
         </button>

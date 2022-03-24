@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCart } from '../../hooks/useCart'
+import { useCart } from '../../../hooks/useCart'
 import './productsTable.css'
 const ProductsTable = ({ products, onSearchInput }) => {
   const { addProductToCart } = useCart()

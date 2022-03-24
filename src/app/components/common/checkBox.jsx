@@ -1,6 +1,8 @@
 import React from 'react'
+import { useFilter } from '../../hooks/useFilter'
 
 const CheckBox = ({ itemsList, onSort }) => {
+  const { checkBoxState } = useFilter()
   return (
     <ul className='list-group'>
       {itemsList &&
@@ -9,10 +11,10 @@ const CheckBox = ({ itemsList, onSort }) => {
             <input
               className='form-check-input me-1'
               type='checkbox'
-              // checked={itemsList > 0 || false}
+              checked={checkBoxState[item._id] || false}
               value={item._id}
               aria-label='...'
-              onClick={() => onSort(item._id)}
+              onChange={() => onSort(item._id)}
             />
             {item.name}
           </li>

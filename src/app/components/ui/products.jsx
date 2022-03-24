@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { useProducts } from '../../hooks/useProduct'
 import Pagination from '../common/pagination'
 import paginate from '../../utils/paginate'
-import LeftBar from '../common/leftBar'
-import ProductsTable from '../common/productsTable'
-import Modal from './modal'
+import Modal from './modal/modal'
+import ProductsTable from './productTable/productsTable'
+import LeftBar from './leftBar/leftBar'
+import { useFilter } from '../../hooks/useFilter'
 const initialParams = {
   selectedBrand: [],
   selectedCategory: [],
@@ -12,6 +13,7 @@ const initialParams = {
   maxRate: 5
 }
 const Products = ({ modalOpen, setModalOpen }) => {
+  const { addToFilter } = useFilter()
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedBrand, setSelectedBrand] = useState(
     initialParams.selectedBrand
@@ -47,6 +49,7 @@ const Products = ({ modalOpen, setModalOpen }) => {
   const handleSearchInput = ({ target }) => {
     setSearchQueary(target.value)
   }
+  const { resetFilters } = useFilter()
   const handleReset = () => {
     setSelectedBrand(initialParams.selectedBrand)
     setSelectedCategory(initialParams.selectedCategory)
@@ -55,6 +58,7 @@ const Products = ({ modalOpen, setModalOpen }) => {
     setMinRate(0)
     setMaxRate(initialParams.maxRate)
     setCurrentPage(1)
+    resetFilters()
   }
   const { products } = useProducts()
   const productsArray = Object.keys(products)
@@ -78,6 +82,7 @@ const Products = ({ modalOpen, setModalOpen }) => {
     return brands[el]
   })
   const handleSortByCategory = (value) => {
+    addToFilter(value)
     selectedCategory.includes(value)
       ? setSelectedCategory((prevState) =>
           prevState.filter((el) => el !== value)
@@ -85,6 +90,7 @@ const Products = ({ modalOpen, setModalOpen }) => {
       : setSelectedCategory((prevState) => [...prevState, value])
   }
   const handleSortByBrand = (value) => {
+    addToFilter(value)
     selectedBrand.includes(value)
       ? setSelectedBrand((prevState) => prevState.filter((el) => el !== value))
       : setSelectedBrand((prevState) => [...prevState, value])
@@ -120,7 +126,7 @@ const Products = ({ modalOpen, setModalOpen }) => {
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex)
   }
-  const pageSize = 8
+  const pageSize = 10
   const productsCount = searchedProducts.length
   const productsCrop = paginate(searchedProducts, currentPage, pageSize)
 

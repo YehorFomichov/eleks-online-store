@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { useCart } from '../../hooks/useCart'
-import { useProducts } from '../../hooks/useProduct'
+import React, { useState } from 'react'
+import { useCart } from '../../../hooks/useCart'
+import { useProducts } from '../../../hooks/useProduct'
 import './modal.css'
 
 function Modal({ setOpenModal }) {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Products from '../components/ui/products'
+import FilterProvider from '../hooks/useFilter'
 import './main.css'
 const Main = () => {
   const [modalOpen, setModalOpen] = useState(false)
@@ -23,7 +24,9 @@ const Main = () => {
               </button>
             </div>
           </div>
-          <Products modalOpen={modalOpen} setModalOpen={setModalOpen} />
+          <FilterProvider>
+            <Products modalOpen={modalOpen} setModalOpen={setModalOpen} />
+          </FilterProvider>
         </div>
       </div>
     </>
