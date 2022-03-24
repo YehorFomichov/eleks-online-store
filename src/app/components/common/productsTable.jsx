@@ -1,12 +1,20 @@
 import React from 'react'
+import { useCart } from '../../hooks/useCart'
 import './productsTable.css'
-const ProductsTable = ({ products }) => {
+const ProductsTable = ({ products, onSearchInput }) => {
+  const { addProductToCart } = useCart()
   return (
     <div className='col-9'>
       <div className='row'>
         <div className='col-12'>
           <div className='form-outline'>
-            <input type='search' id='form1' className='form-control' />
+            <input
+              type='search'
+              id='form1'
+              placeholder='Search'
+              className='search-form'
+              onChange={onSearchInput}
+            />
             <label className='form-label' htmlFor='form1'></label>
           </div>
         </div>
@@ -33,7 +41,11 @@ const ProductsTable = ({ products }) => {
                   <h5 className='product-description'>{el.description}</h5>
                 </div>
                 <div className='row'>
-                  <button className='btn btn-primary col-12'>
+                  <button
+                    className='btn btn-primary col-12'
+                    style={{ color: 'white' }}
+                    onClick={() => addProductToCart(el._id)}
+                  >
                     add to cart
                   </button>
                 </div>

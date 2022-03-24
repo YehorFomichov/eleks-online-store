@@ -12,8 +12,10 @@ const LeftBar = ({
   onChangePrice,
   onChangeRate,
   minRate,
-  maxRate
+  maxRate,
+  onReset
 }) => {
+  // const [restCheckBox,setResetCheckBox] = useState(false)
   return (
     <div className='col-3'>
       <div className='panel-container position-relative'>
@@ -52,10 +54,11 @@ const LeftBar = ({
           />
         </div>
       </div>
-      <div className='row'>
+      <div className='row d-block'>
         <button
-          className='btn btn-primary btn-large'
-          style={{ color: 'white' }}
+          className='btn btn-primary btn-large p-2'
+          style={{ color: 'white', marginLeft: '3%', maxWidth: '94%' }}
+          onClick={() => onReset()}
         >
           Clear all filters
         </button>

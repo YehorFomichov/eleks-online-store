@@ -4,14 +4,26 @@ import Pagination from '../common/pagination'
 import paginate from '../../utils/paginate'
 import LeftBar from '../common/leftBar'
 import ProductsTable from '../common/productsTable'
-const Products = () => {
+import Modal from './modal'
+const initialParams = {
+  selectedBrand: [],
+  selectedCategory: [],
+  maxPrice: 65000,
+  maxRate: 5
+}
+const Products = ({ modalOpen, setModalOpen }) => {
   const [currentPage, setCurrentPage] = useState(1)
-  const [selectedBrand, setSelectedBrand] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState([])
+  const [selectedBrand, setSelectedBrand] = useState(
+    initialParams.selectedBrand
+  )
+  const [selectedCategory, setSelectedCategory] = useState(
+    initialParams.selectedCategory
+  )
   const [minPrice, setMinPrice] = useState(0)
-  const [maxPrice, setMaxPrice] = useState(65000)
+  const [maxPrice, setMaxPrice] = useState(initialParams.maxPrice)
   const [minRate, setMinRate] = useState(0)
-  const [maxRate, setMaxRate] = useState(5)
+  const [maxRate, setMaxRate] = useState(initialParams.maxRate)
+  const [searchQuaery, setSearchQueary] = useState()
   const handleChangePrice = (event) => {
     if (event.target.name === 'min') {
       const value = Math.min(+event.target.value, maxPrice - 1)
@@ -31,6 +43,18 @@ const Products = () => {
       const value = Math.max(+event.target.value, minRate + 1)
       setMaxRate(value)
     }
+  }
+  const handleSearchInput = ({ target }) => {
+    setSearchQueary(target.value)
+  }
+  const handleReset = () => {
+    setSelectedBrand(initialParams.selectedBrand)
+    setSelectedCategory(initialParams.selectedCategory)
+    setMinPrice(0)
+    setMaxPrice(initialParams.maxPrice)
+    setMinRate(0)
+    setMaxRate(initialParams.maxRate)
+    setCurrentPage(1)
   }
   const { products } = useProducts()
   const productsArray = Object.keys(products)
@@ -87,13 +111,18 @@ const Products = () => {
             return el
         })
       : productsArray
-
+  const searchedProducts = searchQuaery
+    ? filteredProducts.filter((el) => {
+        if (el.description.toLowerCase().includes(searchQuaery.toLowerCase()))
+          return el
+      })
+    : filteredProducts
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex)
   }
-  const pageSize = 6
-  const productsCount = filteredProducts.length
-  const productsCrop = paginate(filteredProducts, currentPage, pageSize)
+  const pageSize = 8
+  const productsCount = searchedProducts.length
+  const productsCrop = paginate(searchedProducts, currentPage, pageSize)
 
   return (
     products && (
@@ -109,13 +138,18 @@ const Products = () => {
           maxRate={maxRate}
           onChangePrice={handleChangePrice}
           onChangeRate={handleChangeRate}
+          onReset={handleReset}
         />
-        <ProductsTable products={productsCrop} />
+        <ProductsTable
+          products={productsCrop}
+          onSearchInput={handleSearchInput}
+        />
         <Pagination
           itemsCount={productsCount}
           pageSize={pageSize}
           onPageChange={handlePageChange}
         />
+        {modalOpen && <Modal setOpenModal={setModalOpen} />}
       </div>
     )
   )
